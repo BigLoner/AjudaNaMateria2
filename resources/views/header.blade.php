@@ -22,7 +22,6 @@
           <li><a class="nav-link scrollto active" href="/">Home</a></li>
           <li><a class="nav-link scrollto" href="About">About</a></li>
           <li><a href="Blog">Blog</a></li>
-          <li><a class="nav-link scrollto" href="">Contact</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

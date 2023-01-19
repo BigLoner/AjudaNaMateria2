@@ -53,16 +53,15 @@
   <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <h1 class="logo"><a href="index.html">Anyar</a></h1>
+      <h1 class="logo"><a href="/">AjudaNaMateria</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto " href="/">Home</a></li>
-        <li><a class="nav-link scrollto active" href="About">About</a></li>
-        <li><a href="Blog">Blog</a></li>
-        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+        <li><a class="nav-link scrollto" href="About">About</a></li>
+        <li><a href="Blog" class="nav-link scrollto active">Blog</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>
     </nav><!-- .navbar -->
@@ -76,9 +75,6 @@
     <section id="breadcrumbs" class="breadcrumbs">
       <div class="container">
 
-        <ol>
-          <li><a href="index.html">Home</a></li>
-        </ol>
         <h2>Blog</h2>
 
       </div>
