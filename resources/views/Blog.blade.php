@@ -43,16 +43,33 @@
   <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">info@example.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +1 5589 55488 55
-      </div>
-      <div class="cta d-none d-md-block">
-        <a href="#about" class="scrollto">Get Started</a>
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">AjudaNaMateria@gmail.com</a>
+        <i class="bi bi-phone-fill phone-icon"></i> +351 934022428
       </div>
     </div>
   </div>
 
- @include('header')
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <h1 class="logo"><a href="index.html">Anyar</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " href="/">Home</a></li>
+        <li><a class="nav-link scrollto active" href="About">About</a></li>
+        <li><a href="Blog">Blog</a></li>
+        <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
   <main id="main">
 
     <!-- ======= Breadcrumbs ======= -->
@@ -168,7 +185,7 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                <img src="pap/assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
