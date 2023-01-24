@@ -44,7 +44,6 @@
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">AjudaNaMateria@gmail.com</a>
-        <i class="bi bi-phone-fill phone-icon"></i> +351 934022428
       </div>
     </div>
   </div>

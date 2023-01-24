@@ -93,9 +93,9 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon"><i class="bx bx-layer"></i></div>
-              <h4 class="title">Regras</h4>
-              <p class="description">As regras serão apresentadas aqui, se tiver alguma dúvida esta é a chance de esclarecer, clique aqui para saber mais.</p>
+              <div class="icon" > <a href="#about" ></a><i class="bx bx-layer" ></i></div>
+              <a href="#about" ><h4 class="title">Regras</h4></a>
+              <p class="description">As regras serão apresentadas aqui, se tiver alguma dúvida esta é a chance de esclarecer, clique no titulo para saber mais.</p>
             </div>
           </div>
 
@@ -136,14 +136,14 @@
     </section><!-- End About Us Section -->
 
 
-    <!-- ======= Why Us Section ======= -->
+    <!-- ======= F/Q ======= -->
     <section id="why-us" class="why-us">
       <div class="container-fluid">
 
         <div class="row">
 
-          <div class="col-lg-5 align-items-stretch position-relative video-box" style='background-image: url("pap/assets/img/why-us.jpg");' data-aos="fade-right">
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn mb-4"></a>
+          <div class="col-lg-5 align-items-stretch position-relative" style='background-image: url("pap/assets/img/FQ.jpg");' data-aos="fade-right">
+
           </div>
 
           <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch" data-aos="fade-left">
@@ -179,7 +179,7 @@
                   <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Como posso falar com os moderadores quando estiver com problemas? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
                     <p>
-                        Iremos disponibilizar o nosso email
+                        Iremos disponibilizar o nosso email para qualquer dúvida ou ajuda que podemos dar se alguém precisar de colocar alguma questão. Também podem perguntar a outros membros se precisarem de algo.
                     </p>
                   </div>
                 </li>
@@ -192,7 +192,7 @@
         </div>
 
       </div>
-    </section><!-- End Why Us Section -->
+    </section><!-- End F/Q -->
 
     <!-- ======= Services Section ======= -->
     <section id="services" class="services">
@@ -257,11 +257,11 @@
 
         <div class="row" data-aos="zoom-in">
           <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h3>Escola onde foi feito</h3>
+            <p> Aqui vamos deixar o site da escola em que foi feito o nosso trabalho, se alguém estiver interessado em explorar como é nosso ambiente.</p>
           </div>
           <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
+            <a class="cta-btn align-middle" href="https://site.ae-salvaterra.pt/">Clique Aqui!</a>
           </div>
         </div>
 
@@ -273,8 +273,8 @@
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>Team</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <h2>Equipa</h2>
+          <p>Aqui estão apresentadas as pessoas que realizaram este projeto.</p>
         </div>
 
         <div class="row">
