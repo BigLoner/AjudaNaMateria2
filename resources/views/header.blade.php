@@ -18,8 +18,8 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto active" href="/">Home</a></li>
-          <li><a class="nav-link scrollto" href="About">About</a></li>
+          <li><a class="nav-link scrollto active" href="/">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="About">Regras</a></li>
           <li><a href="Blog">Blog</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>

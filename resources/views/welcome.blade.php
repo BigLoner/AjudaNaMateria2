@@ -119,14 +119,14 @@
                 Este site consiste em ajudar os alunos na sua vida escolar, seja a responder dúvidas ou a ajudar a estudar com fichas e respostas dos professores.
             </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ajuda te nos teus estudos com mais acesso a tudo!</li>
+              <li><i class="ri-check-double-line"></i> Ajuda-te nos teus estudos com mais acesso a várias matérias!</li>
               <li><i class="ri-check-double-line"></i> Tens muitas fichas para resolver e treinar para os testes!</li>
               <li><i class="ri-check-double-line"></i> Se tiveres alguma dúvida podes sempre falar com um membro ou professor!</li>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0">
             <p>
-                É uma ideia simples e nos achamos que poderia ser útil conseguindo fazer o que o a aplicação teams faz que seria comunicação com vários professores que estão dispostos a ajudar e outros alunos que também podem responder ás dúvidas enquanto também as colocam. O nosso site tem a diferença que em vez de só uma comunicação com um professor, podem ser vários tendo uma opinião de vários professores de várias disciplinas.
+                O objetivo seria comunicação com vários professores que estão dispostos a ajudar e outros alunos que também podem responder ás dúvidas enquanto também as colocam. O nosso site tem a característica de não se limitar a só uma pessoa, podem ser pessoas diferenes tendo uma opinião de vários professores e membros de várias disciplinas.
             </p>
             <a href="About" class="btn-learn-more">Saiba mais!</a>
           </div>
@@ -151,7 +151,7 @@
             <div class="content">
               <h3>F/Q <strong>Perguntas e resposta sobre o site</strong></h3>
               <p>
-                Aqui pode se ter alguma perguntas e respostas comuns que se pode ter
+                Aqui tem algumas perguntas e respostas comuns.
               </p>
             </div>
 
