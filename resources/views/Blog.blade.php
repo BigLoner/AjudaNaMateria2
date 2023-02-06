@@ -59,7 +59,7 @@
       <nav id="navbar" class="navbar">
       <ul>
         <li><a class="nav-link scrollto " href="/">Home</a></li>
-        <li><a class="nav-link scrollto" href="About">About</a></li>
+        <li><a class="nav-link scrollto" href="Regras">Regras</a></li>
         <li><a href="Blog" class="nav-link scrollto active">Blog</a></li>
       </ul>
       <i class="bi bi-list mobile-nav-toggle"></i>

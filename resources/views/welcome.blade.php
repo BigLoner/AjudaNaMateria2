@@ -93,8 +93,8 @@
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
-              <div class="icon" > <a href="#about" ></a><i class="bx bx-layer" ></i></div>
-              <a href="#about" ><h4 class="title">Regras</h4></a>
+              <div class="icon" > <a href="Regras" ></a><i class="bx bx-layer" ></i></div>
+              <a href="Regras" ><h4 class="title">Regras</h4></a>
               <p class="description">As regras serão apresentadas aqui, se tiver alguma dúvida esta é a chance de esclarecer, clique no titulo para saber mais.</p>
             </div>
           </div>
@@ -159,7 +159,7 @@
               <ul>
                 <li data-aos="fade-up" data-aos-delay="100">
                   <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> É preciso pagar para aceder ao site? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                  <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
                     <p>
                      Este site é completamente grátis, não vamos cobrar nada porque esse não é o nosso objetivo.
                     </p>
@@ -283,9 +283,9 @@
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="pap/assets/img/team/team-1.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Walter White</h4>
-                <span>Chief Executive Officer</span>
-                <p>Explicabo voluptatem mollitia et repellat qui dolorum quasi</p>
+                <h4>Rodrigo Teixeira</h4>
+                <span>Criador do Site</span>
+                <p>Encarregado do código feito no site</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -300,9 +300,9 @@
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="pap/assets/img/team/team-2.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>Sarah Jhonson</h4>
-                <span>Product Manager</span>
-                <p>Aut maiores voluptates amet et quis praesentium qui senda para</p>
+                <h4>Gabriel Coelho</h4>
+                <span>Criador do site</span>
+                <p>Encarregado da base de dados e das imagens colocadas no site</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
@@ -317,9 +317,9 @@
             <div class="member d-flex align-items-start">
               <div class="pic"><img src="pap/assets/img/team/team-3.jpg" class="img-fluid" alt=""></div>
               <div class="member-info">
-                <h4>William Anderson</h4>
-                <span>CTO</span>
-                <p>Quisquam facilis cum velit laborum corrupti fuga rerum quia</p>
+                <h4>António Andrade</h4>
+                <span>Professor</span>
+                <p>Ajudo na criação do site e dos problemas do mesmo</p>
                 <div class="social">
                   <a href=""><i class="ri-twitter-fill"></i></a>
                   <a href=""><i class="ri-facebook-fill"></i></a>
