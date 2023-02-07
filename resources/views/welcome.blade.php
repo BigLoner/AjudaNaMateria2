@@ -158,7 +158,7 @@
             <div class="accordion-list">
               <ul>
                 <li data-aos="fade-up" data-aos-delay="100">
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> É preciso pagar para aceder ao site? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+                  <a data-bs-toggle="collapse" class="collapsed" data-bs-target="#accordion-list-1"><span>01</span> É preciso pagar para aceder ao site? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
                   <div id="accordion-list-1" class="collapse" data-bs-parent=".accordion-list">
                     <p>
                      Este site é completamente grátis, não vamos cobrar nada porque esse não é o nosso objetivo.
@@ -207,36 +207,36 @@
           <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <i class="bi bi-card-checklist"></i>
-              <h4><a href="#">Lorem Ipsum</a></h4>
-              <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident</p>
+              <h4><a href="#">Fichas de matéria</a></h4>
+              <p>Poderão ter acesso a fichas que professores ou outros membros possam deixar nos seus topics para estudar</p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <i class="bi bi-bar-chart"></i>
-              <h4><a href="#">Dolor Sitema</a></h4>
-              <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat tarad limino ata</p>
+              <h4><a href="#">Esclarecer dúvidas</a></h4>
+              <p>Aqui poderás encontrar as respostas que desejas sobre o que procuras, fala com os outros membros ou professores para ficares esclarecido</p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <i class="bi bi-binoculars"></i>
-              <h4><a href="#">Sed ut perspiciatis</a></h4>
-              <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+              <h4><a href="#">Falar com outras pessoas</a></h4>
+              <p>Podes falar com várias pessoas que te podem ajudar no teu conhecimento e talvez possas ganhar um novo amigo</p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
             <div class="icon-box">
               <i class="bi bi-brightness-high"></i>
-              <h4><a href="#">Nemo Enim</a></h4>
-              <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+              <h4><a href="#">Criar tópicos</a></h4>
+              <p>Podes criar tópicos sobre as matérias que queres ajuda ou ajudar outras pessoas </p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
             <div class="icon-box">
               <i class="bi bi-calendar4-week"></i>
-              <h4><a href="#">Magni Dolore</a></h4>
-              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque</p>
+              <h4><a href="#">Conselhos</a></h4>
+              <p>Nos comentários podes receber conselhos de outras pessoas em relação aos tópicos publicados, á muitas formas de aprender só tens de achar a tua!</p>
             </div>
           </div>
           <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">

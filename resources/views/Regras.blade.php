@@ -82,6 +82,9 @@
                         <li><i class="ri-check-double-line"></i>Não usar vocabulário inapropriado como por exemplo palavrões.</li>
                         <li><i class="ri-check-double-line"></i>Os comentários devem ser moderados, por isso pedimos que não acha “spam”.</li>
                         <li><i class="ri-check-double-line"></i>Qualquer post que seja feito é pedido que seja de acordo com o site, por exemplo posts sobre jogos não serão permitidos (a não ser que esses jogos sejam sobre educação).</li>
+                        <li><i class="ri-check-double-line"></i>Não criar discussões desnecessárias.</li>
+                        <li><i class="ri-check-double-line"></i>Não falar sobre temas que nada têm haver com o site como religião e política.</li>
+
                     </ul>
                 </div>
             </div>
