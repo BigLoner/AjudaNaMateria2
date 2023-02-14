@@ -53,7 +53,7 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="/">Home</a></li>
+                    <li><a class="nav-link scrollto" href="/">Inicio</a></li>
                     <li><a class="nav-link scrollto active" href="Regras">Regras</a></li>
                     <li><a href="Blog">Blog</a></li>
                 </ul>
@@ -77,8 +77,8 @@
                 <div class="col-lg-6">
 
                     <ul>
-                        <li><i class="ri-check-double-line"></i> Respeitar todos os membros do site.</li>
-                        <li><i class="ri-check-double-line"></i>Não enviar ficheiros que não tenham haver com o que é pretendido. </li>
+                        <li><i class="ri-check-double-line"></i>Respeitar todos os membros do site.</li>
+                        <li><i class="ri-check-double-line"></i>Não enviar ficheiros sobre o que não é pretendido. </li>
                         <li><i class="ri-check-double-line"></i>Não usar vocabulário inapropriado como por exemplo palavrões.</li>
                         <li><i class="ri-check-double-line"></i>Os comentários devem ser moderados, por isso pedimos que não acha “spam”.</li>
                         <li><i class="ri-check-double-line"></i>Qualquer post que seja feito é pedido que seja de acordo com o site, por exemplo posts sobre jogos não serão permitidos (a não ser que esses jogos sejam sobre educação).</li>
@@ -110,13 +110,13 @@
                         <div class="address">
                             <i class="bi bi-geo-alt"></i>
                             <h4>Location:</h4>
-                            <p>A108 Adam Street, New York, NY 535022</p>
+                            <p></p>
                         </div>
 
                         <div class="email">
                             <i class="bi bi-envelope"></i>
                             <h4>Email:</h4>
-                            <p>info@example.com</p>
+                            <p>Ajuda</p>
                         </div>
 
                         <div class="phone">
@@ -170,22 +170,6 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
 
-        <div class="footer-newsletter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <h4>Our Newsletter</h4>
-                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                    </div>
-                    <div class="col-lg-6">
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <div class="footer-top">
             <div class="container">
                 <div class="row">
@@ -200,42 +184,25 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-
                     <div class="col-lg-3 col-md-6 footer-contact">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br>
-                            New York, NY 535022<br>
-                            United States <br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
+                            Rua do Parque, 2120-092 Salvaterra de Magos<br>
+                            Portugal <br><br>
+                            <strong>Email:</strong> AjudaNaMateria@gmail.com<br>
                         </p>
 
                     </div>
 
-                    <div class="col-lg-3 col-md-6 footer-info">
-                        <h3>About Anyar</h3>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
-                            valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        </div>
+
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
                     </div>
+
 
                 </div>
             </div>
