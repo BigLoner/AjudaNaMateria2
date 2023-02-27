@@ -188,7 +188,7 @@ h6 {
 }
 
 #header.header-scrolled {
-  background: rgba(5, 87, 158, 0.9);
+  background: #05579ee6;
   top: 0;
 }
 
@@ -222,7 +222,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -361,7 +361,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;

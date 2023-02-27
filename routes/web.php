@@ -18,6 +18,15 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('Regras', function () {
+    return view('Regras');
+});
+
+Route::get('Blog', function () {
+    return view('Blog');
+});
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
@@ -27,5 +36,10 @@ Route::middleware('auth')->group(function () {
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
-
+Route::get('alunos', [App\Http\Controllers\AlunoController::class, 'index']);
 require __DIR__.'/auth.php';
+
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
