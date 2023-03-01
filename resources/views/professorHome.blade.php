@@ -15,7 +15,7 @@
                     @endif
 
                     {{ __('Login feito com sucesso!') }}
-                    Bem vindo utilizador
+                    Bem vindo professor
 
                 </div>
             </div>

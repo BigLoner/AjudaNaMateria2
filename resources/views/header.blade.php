@@ -6,7 +6,7 @@
         <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">AjudaNaMateria@gmail.com</a>
       </div>
       <div class="cta d-none d-md-block">
-        <a href="#about" class="scrollto">Get Started</a>
+        <a href="dashboard" class="scrollto">Login/Register</a>
       </div>
     </div>
   </div>
