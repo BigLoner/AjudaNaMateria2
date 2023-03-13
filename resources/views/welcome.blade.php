@@ -152,7 +152,7 @@
                         <p>
                             O objetivo seria comunicação com vários professores que estão dispostos a ajudar e outros
                             alunos que também podem responder ás dúvidas enquanto também as colocam. O nosso site tem a
-                            característica de não se limitar a só uma pessoa, podem ser pessoas diferenes tendo uma
+                            característica de não se limitar a só uma pessoa, podem ser pessoas diferentes tendo uma
                             opinião de vários professores e membros de várias disciplinas.
                         </p>
                     </div>
@@ -294,9 +294,8 @@
                         data-aos-delay="600">
                         <div class="icon-box">
                             <i class="bi bi-briefcase"></i>
-                            <h4>Eiusmod Tempor</a></h4>
-                            <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta
-                                nobis est eligendi</p>
+                            <h4>Ajudar outras pessoas</a></h4>
+                            <p>Gostas de ajudar outras pessoas nos estudos? Então estás num bom caminho! Neste site tens a chance de ajudar outros membros com as suas questões e também pode ser ajudado se precisares. </p>
                         </div>
                     </div>
                 </div>
@@ -328,14 +327,14 @@
 
                 <div class="section-title">
                     <h2>Equipa</h2>
-                    <p>Aqui estão apresentadas as pessoas que realizaram este projeto.</p>
+                    <p>Aqui estão apresentadas as pessoas que realizaram e ajudaram na criação deste projeto </p>
                 </div>
 
                 <div class="row">
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="pap/assets/img/team/team-1.jpg" class="img-fluid"
+                            <div class="pic"><img src="pap/assets/img/team/Team-1.png" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Rodrigo Teixeira</h4>
@@ -353,7 +352,7 @@
 
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="pap/assets/img/team/team-2.jpg" class="img-fluid"
+                            <div class="pic"><img src="pap/assets/img/team/Team-2.png" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Gabriel Coelho</h4>
@@ -368,43 +367,6 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="300">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="pap/assets/img/team/team-3.jpg" class="img-fluid"
-                                    alt=""></div>
-                            <div class="member-info">
-                                <h4>António Andrade</h4>
-                                <span>Professor</span>
-                                <p>Ajudo na criação do site e dos problemas do mesmo</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-lg-6 mt-4" data-aos="fade-up" data-aos-delay="400">
-                        <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="pap/assets/img/team/team-4.jpg" class="img-fluid"
-                                    alt=""></div>
-                            <div class="member-info">
-                                <h4>Amanda Jepson</h4>
-                                <span>Accountant</span>
-                                <p>Dolorum tempora officiis odit laborum officiis et et accusamus</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
 
             </div>
@@ -448,19 +410,19 @@
                             <div class="row">
                                 <div class="col-md-6 form-group">
                                     <input type="text" name="name" class="form-control" id="name"
-                                        placeholder="Your Name" required>
+                                        placeholder="Nome" required>
                                 </div>
                                 <div class="col-md-6 form-group mt-3 mt-md-0">
                                     <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="Your Email" required>
+                                        placeholder="Email" required>
                                 </div>
                             </div>
                             <div class="form-group mt-3">
                                 <input type="text" class="form-control" name="subject" id="subject"
-                                    placeholder="Subject" required>
+                                    placeholder="Assunto" required>
                             </div>
                             <div class="form-group mt-3">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                                <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
                             </div>
                             <div class="my-3">
                                 <div class="loading">Loading</div>

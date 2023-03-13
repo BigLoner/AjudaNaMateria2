@@ -40,13 +40,17 @@
 <body>
 
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
+  <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">AjudaNaMateria@gmail.com</a>
+        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com"></a>
+      </div>
+      <div class="cta d-none d-md-block">
+        <a href="dashboard" class="scrollto">Login/Register</a>
       </div>
     </div>
   </div>
+
 
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
@@ -239,7 +243,7 @@
                   <li><a href="#">Creative <span>(8)</span></a></li>
                   <li><a href="#">Educaion <span>(14)</span></a></li>
                 </ul>
-              </div><!-- End sidebar categories-->
+              </div><!-- End sidebar categories
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
@@ -271,9 +275,9 @@
                   <img src="pap/assets/img/blog/blog-recent-5.jpg" alt="">
                   <h4><a href="blog-single.html">Et dolores corrupti quae illo quod dolor</a></h4>
                   <time datetime="2020-01-01">Jan 1, 2020</time>
-                </div>
+                </div>-->
 
-              </div><!-- End sidebar recent posts-->
+              </div><!-- End sidebar recent posts
 
               <h3 class="sidebar-title">Tags</h3>
               <div class="sidebar-item tags">
@@ -289,7 +293,7 @@
                   <li><a href="#">Smart</a></li>
                   <li><a href="#">Tips</a></li>
                   <li><a href="#">Marketing</a></li>
-                </ul>
+                </ul>-->
               </div><!-- End sidebar tags-->
 
             </div><!-- End sidebar -->
