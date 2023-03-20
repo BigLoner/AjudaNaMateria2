@@ -14,9 +14,10 @@
                         </div>
                     @endif
 
-                    {{ __('Login feito com sucesso!') }}
-                    Bem vindo utilizador
+                   {{Auth::user()->name}}
+                
 
+                    <button type="button" class="btn btn-outline-primary"><a href="/">Clique aqui para voltar à pagina inicial!</a></button>
                 </div>
             </div>
         </div>

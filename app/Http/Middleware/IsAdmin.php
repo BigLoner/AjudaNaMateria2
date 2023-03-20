@@ -4,9 +4,8 @@ namespace App\Http\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-class UserAccess
+class IsAdmin
 {
     /**
      * Handle an incoming request.
@@ -15,11 +14,12 @@ class UserAccess
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
-    public function handle(Request $request, Closure $next, $role)
+    public function handle(Request $request, Closure $next)
     {
-        if(Auth::check() && Auth::user()->role == $role){
+        if(auth()-> user()->is_admin==1){
             return $next($request);
+        }else{
+            return redirect('home')->with('error','Não tens acesso a ser um moderador');
         }
-        return response()->json(['Não tens permissão para aceder esta página, dê login/register primeiro.']);
     }
 }

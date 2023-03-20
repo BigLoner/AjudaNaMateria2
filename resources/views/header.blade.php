@@ -17,7 +17,7 @@
 
      <!-- <h1 class="logo"><a href="http://127.0.0.1:8000/">AjudaNaMatéria</a></h1>-->
       <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="#" class="logo"><img src="pap/assets/img/logoedit.png" alt="" class="img-fluid"></a>
+      <a href="#" class="logo"><img src="{{asset('pap/assets/img/logoedit.png')}}" alt="" class="img-fluid"></a>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -27,6 +27,5 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
-
     </div>
   </header><!-- End Header -->

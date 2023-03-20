@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="utf-8">
@@ -352,7 +352,7 @@
 
                     <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{asset('pap/assets/img/team/Team-2.png')}}" class="img-fluid"
+                            <div class="pic"><img src="pap/assets/img/team/Team-2.png" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Gabriel Coelho</h4>

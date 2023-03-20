@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Moderadores;
+use App\Models\User;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
@@ -19,7 +19,7 @@ class CreateUsersSeeder extends Seeder
         [
         'name'=> 'moderador',
         'email'=> 'moderador@gmail.com',
-        'type'=> '1',
+        'type'=> '2',
         'password'=> ('moderador123'),
 
 

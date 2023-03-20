@@ -2,6 +2,8 @@
 
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -48,6 +50,17 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware(['auth', 'user-access:moderadores'])->group(function () {
-   Route::get('/moderadores/home', [HomeController::class, 'moderadoresHome'])->name('moderadores.home');
-  });
+Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHome'])->name('admin.home')->middleware('is_admin');
+
+//Route::middleware(['auth', ''])->group(function () {
+   //Route::get('/moderadores/home', [HomeController::class, 'Moderadores'])->name('moderadores.home');
+ // });
+  //Route::middleware(['auth', ''])->group(function () {
+
+   // Route::get('/', [HomeController::class, 'welcome'])->name('welcome');
+ // });
+
+  //Route::middleware(['auth', '  '])->group(function () {
+
+    //  Route::get('/professor/home', [HomeController::class, 'professorhome'])->name('professor.home');
+  //});

@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             // 0 = user ; 1 = professor ; 2 = moderadores
-            $table->tinyInteger("role")->default(0);
+            $table->boolean('is_admin')->default(0);
             $table->timestamps();
         });
     }
