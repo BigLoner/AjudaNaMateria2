@@ -33,4 +33,12 @@ class HomeController extends Controller
     {
         return view('professorhome');
     }
+    public function adminRegras()
+    {
+        return view('admin-regras');
+    }
+    public function adminBlog()
+    {
+        return view('admin-blog');
+    }
 }

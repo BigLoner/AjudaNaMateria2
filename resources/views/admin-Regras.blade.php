@@ -20,7 +20,7 @@
 
     <!-- Vendor CSS Files -->
     <link href="{{asset('pap/assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+    <link href="{{asset('pap/assets/vendor/aos/aos.css" rel="stylesheet')}}">
     <link href="{{asset('pap/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
     <link href="{{asset('pap/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
     <link href="{{asset('pap/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
@@ -57,8 +57,8 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li><a class="nav-link scrollto" href="/">Inicio</a></li>
-                    <li><a class="nav-link scrollto active" href="Regras">Regras</a></li>
-                    <li><a href="Blog">Blog</a></li>
+                    <li><a class="nav-link scrollto active" href="regras">Regras</a></li>
+                    <li><a href="blog">Blog</a></li>
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
                 <div class="cta d-none d-md-block">
@@ -238,16 +238,16 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{asset('pap/assets/vendor/aos/aos.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{asset('pap/assets/vendor/aos/aos.js')}}asset"></script>
+    <script src="{{asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}asset"></script>
+    <script src="{{asset('pap/assets/vendor/glightbox/js/glightbox.min.js')}}asset"></script>
+    <script src="{{asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}asset"></script>
+    <script src="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.js')}}asset"></script>
+    <script src="{{asset('pap/assets/vendor/php-email-form/validate.js')}}asset"></script>
 
     <!-- Template Main JS File -->
     <script src="{{asset('pap/assets/js/main.js')}}"></script>
-'
+
 </body>
 
 </html>

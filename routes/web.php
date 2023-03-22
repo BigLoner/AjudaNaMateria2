@@ -3,7 +3,7 @@
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
-
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -64,3 +64,8 @@ Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHom
 
     //  Route::get('/professor/home', [HomeController::class, 'professorhome'])->name('professor.home');
   //});
+  Route::get('/admin/regras', [App\Http\Controllers\HomeController::class, 'adminRegras'])->name('admin.regras');
+  Route::get('/admin/blog', [App\Http\Controllers\HomeController::class, 'adminBlog'])->name('admin.blog');
+  Route::resource('posts', 'App\Http\Controllers\PostController');
+  Route::get('posts', 'App\Http\Controllers\PostController@index')->name('posts');
+  Route::resource('categorias', CategoriaController::class);

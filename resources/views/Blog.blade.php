@@ -10,24 +10,24 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="pap/assets/img/favicon.png" rel="icon">
-  <link href="pap/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="{{asset('pap/assets/img/favicon.png')}}" rel="icon">
+  <link href="{{asset('pap/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="pap/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="pap/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="pap/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="pap/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="pap/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="pap/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="pap/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="pap/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/aos/aos.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
+  <link href="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="pap/assets/css/style.css" rel="stylesheet">
+  <link href="{{asset('pap/assets/css/style.css')}}" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Anyar - v4.9.1
@@ -43,7 +43,7 @@
   <div id="topbar" class="fixed-top d-flex align-items-center ">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com"></a>
+
       </div>
       <div class="cta d-none d-md-block">
         <a href="dashboard" class="scrollto">Login/Register</a>
@@ -94,7 +94,7 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="pap/assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                <img src="{{asset('pap/assets/img/blog/blog-1.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -124,7 +124,7 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="pap/assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                <img src="{{asset('pap/assets/img/blog/blog-2.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -154,7 +154,7 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="pap/assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                <img src="{{asset('pap/assets/img/blog/blog-3.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -184,7 +184,7 @@
             <article class="entry">
 
               <div class="entry-img">
-                <img src="pap/assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                <img src="{{asset('pap/assets/img/blog/blog-4.jpg')}}" alt="" class="img-fluid">
               </div>
 
               <h2 class="entry-title">
@@ -213,8 +213,8 @@
 
             <div class="blog-pagination">
               <ul class="justify-content-center">
-                <li><a href="#">1</a></li>
-                <li class="active"><a href="#">2</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
               </ul>
             </div>
@@ -366,15 +366,15 @@
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="pap/assets/vendor/aos/aos.js"></script>
-  <script src="pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="pap/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="pap/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="pap/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="pap/assets/vendor/php-email-form/validate.js"></script>
+  <script src="{{asset('pap/assets/vendor/aos/aos.js')}}"></script>
+  <script src="{{asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+  <script src="{{asset('pap/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+  <script src="{{asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+  <script src="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+  <script src="{{asset('pap/assets/vendor/php-email-form/validate.js')}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="pap/assets/js/main.js"></script>
+  <script src="{{asset('pap/assets/js/main.js')}}"></script>
 
 </body>
 
