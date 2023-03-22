@@ -13,6 +13,8 @@ use Illuminate\Database\Eloquent\Casts\Attribute;
 
 use function Pest\Laravel\get;
 
+
+
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
