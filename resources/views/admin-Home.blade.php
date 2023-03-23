@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset('pap/assets/img/favicon.png')}}" rel="icon">
-    <link href="{{asset('pap/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{ asset('pap/assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('pap/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -19,17 +19,17 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{asset('pap/assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/aos/aos.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{asset('pap/assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/css/style.css') }}" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Anyar - v4.9.1
@@ -37,7 +37,7 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-  @livewireStyles
+    @livewireStyles
 </head>
 
 <body>
@@ -45,35 +45,68 @@
 
 
     <!-- ======= Top Bar ======= -->
- <div id="topbar" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
-      <div class="contact-info d-flex align-items-center">
-        <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">AjudaNaMateria@gmail.com</a>
-      </div>
-      <div class="cta d-none d-md-block">
-        <a href="dashboard" class="scrollto">Login/Register</a>
-      </div>
+    <div id="topbar" class="fixed-top d-flex align-items-center ">
+        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">AjudaNaMateria@gmail.com</a>
+            </div>
+            <ul class="navbar-nav ms-auto">
+                <!-- Authentication Links -->
+                @guest
+                    @if (Route::has('login'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                        </li>
+                    @endif
+
+                    @if (Route::has('register'))
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                        </li>
+                    @endif
+                @else
+                    <li class="nav-item dropdown">
+                        <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                            {{ Auth::user()->name }}
+                        </a>
+
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="{{ route('logout') }}"
+                                onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                {{ __('Logout') }}
+                            </a>
+
+                            <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                                @csrf
+                            </form>
+                        </div>
+                    </li>
+                @endguest
+            </ul>
+        </div>
     </div>
-  </div>
 
-<!-- ======= Header ======= -->
- <header id="header" class="fixed-top d-flex align-items-center ">
-    <div class="container d-flex align-items-center justify-content-between">
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center ">
+        <div class="container d-flex align-items-center justify-content-between">
 
-     <!-- <h1 class="logo"><a href="http://127.0.0.1:8000/">AjudaNaMatéria</a></h1>-->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="#" class="logo"><img src="{{asset('pap/assets/img/logoedit.png')}}" alt="" class="img-fluid"></a>
+            <!-- <h1 class="logo"><a href="http://127.0.0.1:8000/">AjudaNaMatéria</a></h1>-->
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <a href="#" class="logo"><img src="{{ asset('pap/assets/img/logoedit.png') }}" alt=""
+                    class="img-fluid"></a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="/">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="regras">Regras</a></li>
-          <li><a href="blog">Blog</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-    </div>
-  </header><!-- End Header -->
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto active" href="/">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="regras">Regras</a></li>
+                    <li><a href="blog">Blog</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+        </div>
+    </header><!-- End Header -->
 
 
     <!-- ======= Hero Section ======= -->
@@ -199,7 +232,7 @@
                 <div class="row">
 
                     <div class="col-lg-5 align-items-stretch position-relative"
-                        style='background-image: url("{{asset('pap/assets/img/FQ.jpg')}}");' data-aos="fade-right">
+                        style='background-image: url("{{ asset('pap/assets/img/FQ.jpg') }}");' data-aos="fade-right">
 
                     </div>
 
@@ -325,7 +358,9 @@
                         <div class="icon-box">
                             <i class="bi bi-briefcase"></i>
                             <h4>Ajudar outras pessoas</a></h4>
-                            <p>Gostas de ajudar outras pessoas nos estudos? Então estás num bom caminho! Neste site tens a chance de ajudar outros membros com as suas questões e também pode ser ajudado se precisares. </p>
+                            <p>Gostas de ajudar outras pessoas nos estudos? Então estás num bom caminho! Neste site tens
+                                a chance de ajudar outros membros com as suas questões e também pode ser ajudado se
+                                precisares. </p>
                         </div>
                     </div>
                 </div>
@@ -364,8 +399,8 @@
 
                     <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{asset('pap/assets/img/team/Team-1.png')}}" class="img-fluid"
-                                    alt=""></div>
+                            <div class="pic"><img src="{{ asset('pap/assets/img/team/Team-1.png') }}"
+                                    class="img-fluid" alt=""></div>
                             <div class="member-info">
                                 <h4>Rodrigo Teixeira</h4>
                                 <span>Criador do Site</span>
@@ -531,15 +566,15 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{asset('pap/assets/vendor/aos/aos.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
-    <script src="{{asset('pap/assets/vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{ asset('pap/assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('pap/assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('pap/assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ asset('pap/assets/vendor/php-email-form/validate.js') }}"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{asset('pap/assets/js/main.js')}}"></script>
+    <script src="{{ asset('pap/assets/js/main.js') }}"></script>
     @livewireScripts
 </body>
 
