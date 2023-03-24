@@ -16,7 +16,7 @@
                             </div>
 
                             <h2 class="entry-title">
-                                <a href="{{ route('blog.detail', $post->id) }}">{{ $post->titulo }}</a>
+                                <a href="#">{{ $post->titulo }}</a>
                             </h2>
 
                             <div class="entry-meta">
@@ -39,7 +39,7 @@
                                     {{ $post->destaque }}
                                 </p>
                                 <div class="read-more">
-                                    <a href="{{ route('blog.detail', $post->id) }}">Ler Mais</a>
+                                    <a href="#">Ler Mais</a>
                                 </div>
                             </div>
 
