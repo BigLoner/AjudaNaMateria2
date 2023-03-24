@@ -55,7 +55,7 @@
                 <div class="carousel-container">
                     <h2 class="animate__animated animate__fadeInDown">Bem vindo a <span>AjudaNaMatéria</span></h2>
                     <p class="animate__animated animate__fadeInUp">O site que te ajuda a estudar, resolver exercícios e
-                        esclarece as tuas dúvidas.</p>
+                        esclarece as tuas dúvidas. Para conseguir aceder ao blog tem de se registar</p>
                     <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Saiba
                         mais!</a>
                 </div>

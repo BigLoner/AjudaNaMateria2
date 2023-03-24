@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="{{asset('pap/assets/img/favicon.png')}}" rel="icon">
-    <link href="{{asset('pap/assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+    <link href="{{ asset('pap/assets/img/favicon.png') }}" rel="icon">
+    <link href="{{ asset('pap/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link
@@ -19,17 +19,17 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link href="{{asset('pap/assets/vendor/animate.css/animate.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/aos/aos.css" rel="stylesheet')}}">
-    <link href="{{asset('pap/assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/remixicon/remixicon.css')}}" rel="stylesheet">
-    <link href="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/aos/aos.css" rel="stylesheet') }}">
+    <link href="{{ asset('pap/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="{{asset('pap/assets/css/style.css')}}" rel="stylesheet">
+    <link href="{{ asset('pap/assets/css/style.css') }}" rel="stylesheet">
 
     <!-- =======================================================
   * Template Name: Anyar - v4.9.1
@@ -56,9 +56,10 @@
 
             <nav id="navbar" class="navbar">
                 <ul>
-                    <li><a class="nav-link scrollto" href="/">Inicio</a></li>
+                    <li><a class="nav-link scrollto" href="home">Inicio</a></li>
                     <li><a class="nav-link scrollto active" href="regras">Regras</a></li>
                     <li><a href="blog">Blog</a></li>
+                    
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
                 <div class="cta d-none d-md-block">
@@ -238,15 +239,15 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="{{asset('pap/assets/vendor/aos/aos.js')}}asset"></script>
-    <script src="{{asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}asset"></script>
-    <script src="{{asset('pap/assets/vendor/glightbox/js/glightbox.min.js')}}asset"></script>
-    <script src="{{asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js')}}asset"></script>
-    <script src="{{asset('pap/assets/vendor/swiper/swiper-bundle.min.js')}}asset"></script>
-    <script src="{{asset('pap/assets/vendor/php-email-form/validate.js')}}asset"></script>
+    <script src="{{ asset('pap/assets/vendor/aos/aos.js') }}asset"></script>
+    <script src="{{ asset('pap/assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}asset"></script>
+    <script src="{{ asset('pap/assets/vendor/glightbox/js/glightbox.min.js') }}asset"></script>
+    <script src="{{ asset('pap/assets/vendor/isotope-layout/isotope.pkgd.min.js') }}asset"></script>
+    <script src="{{ asset('pap/assets/vendor/swiper/swiper-bundle.min.js') }}asset"></script>
+    <script src="{{ asset('pap/assets/vendor/php-email-form/validate.js') }}asset"></script>
 
     <!-- Template Main JS File -->
-    <script src="{{asset('pap/assets/js/main.js')}}"></script>
+    <script src="{{ asset('pap/assets/js/main.js') }}"></script>
 
 </body>
 

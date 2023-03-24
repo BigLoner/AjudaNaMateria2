@@ -3,7 +3,7 @@
 @section('content')
     <h1>Os meus Posts</h1>
     <a href="{{ route('posts.create') }}" class="btn btn-dark">Criar Novo</a>
-    <a href="admin-Blog" class="btn btn-dark">Voltar Blog</a>
+    <a href="admin/blog" class="btn btn-dark">Voltar Blog</a>
     <div class="mt-3">
         @if (Session::has('ok'))
         <div class="alert alert-success" role="alert">
@@ -32,7 +32,7 @@
                     <td>{{ $post->updated_at->diffForHumans() }}</td>
                     <td>
                         <div class="d-flex justify-content-start">
-                            <a href="{{route('posts.show', $post->id)}}" class="btn btn-sm btn-dark me-2">Detalhes</a>
+                            <!--<a href="{{route('posts.show', $post->id)}}" class="btn btn-sm btn-dark me-2">Detalhes</a>-->
                             <a href="{{route('posts.edit', $post->id)}}" class="btn btn-sm btn-warning me-2">Editar</a>
                             <form action="{{route('posts.destroy', $post->id)}}" method="POST">
                                 @method('delete')

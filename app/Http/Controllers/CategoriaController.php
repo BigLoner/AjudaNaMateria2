@@ -42,7 +42,7 @@ class CategoriaController extends Controller
         //dd($request->all());
         Categoria::create($request->all());
         session()->flash('ok', 'Categoria inserida com sucesso');
-        return redirect()->route('categorias.index');
+        return redirect()->route('categorias');
     }
 
     /**
@@ -81,7 +81,7 @@ class CategoriaController extends Controller
     {
         $categoria = Categoria::findOrFail($id);
         $categoria->update($request->all());
-        return redirect()->route('categorias.index');
+        return redirect()->route('categorias');
     }
 
     /**
@@ -94,6 +94,6 @@ class CategoriaController extends Controller
     {
         $categoria = Categoria::findOrFail($id);
         $categoria->delete();
-        return redirect()->route('categorias.index');
+        return redirect()->route('categorias');
     }
 }

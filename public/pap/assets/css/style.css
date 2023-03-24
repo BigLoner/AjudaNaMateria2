@@ -131,7 +131,7 @@ h6 {
   font-size: 14px;
   transition: all 0.5s;
   overflow: hidden;
-  color: rgba(255, 255, 255, 0.8);
+  color: #000000e6;
   z-index: 996;
 }
 
@@ -141,7 +141,7 @@ h6 {
 
 #topbar .contact-info a {
   line-height: 0;
-  color: rgba(255, 255, 255, 0.8);
+  color: #000000e6;
   transition: 0.3s;
 }
 

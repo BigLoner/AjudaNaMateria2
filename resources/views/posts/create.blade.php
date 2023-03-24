@@ -83,7 +83,7 @@
                         <div class="blog-pagination">
                             <ul class="justify-content-center">
                                 <li class="active"><a href="/#">Voltar para o inicio </a></li>
-                                <li><a href="{{route('categorias.index')}}">Voltar para o Categoria</a></li>
+                                <li><a href="{{route('categorias')}}">Voltar para o Categoria</a></li>
                                 <li><a href="{{route('posts')}}">Voltar para o Posts</a></li>
                             </ul>
                         </div>

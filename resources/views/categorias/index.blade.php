@@ -1,10 +1,10 @@
-@extends('layouts-base.base')
+@extends('layouts.base')
 
 @section('content')
     <h1>Gestão de Categorias</h1>
 
     <a href="{{ route('categorias.create') }}" class="btn btn-dark">Criar Nova</a>
-    <a href="blog" class="btn btn-dark">Voltar Blog</a>
+    <a href="admin/blog" class="btn btn-dark">Voltar Blog</a>
     <div class="mt-3">
         @if (Session::has('ok'))
         <div class="alert alert-success" role="alert">

@@ -1,4 +1,4 @@
-@extends('layouts-base.base')
+@extends('layouts.base')
 
 @section('content')
     <h1>Gestão de Categorias | Create</h1>
@@ -14,6 +14,6 @@
             @enderror
         </div>
         <button type="submit" class="btn btn-primary">Guardar Categoria</button>
-        <a href="{{route('categorias.index')}}" class="btn btn-secondary">Voltar à lista</a>
+        <a href="{{route('categorias')}}" class="btn btn-secondary">Voltar à lista</a>
     </form>
 @endsection

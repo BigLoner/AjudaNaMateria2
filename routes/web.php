@@ -68,4 +68,5 @@ Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHom
   Route::get('/admin/blog', [App\Http\Controllers\HomeController::class, 'adminBlog'])->name('admin.blog');
   Route::resource('posts', 'App\Http\Controllers\PostController');
   Route::get('posts', 'App\Http\Controllers\PostController@index')->name('posts');
-  Route::resource('categorias', CategoriaController::class);
+  Route::resource('categorias', 'App\Http\Controllers\CategoriaController');
+  Route::get('categorias', 'App\Http\Controllers\CategoriaController@index')->name('categorias');
