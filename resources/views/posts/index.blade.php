@@ -2,7 +2,8 @@
 
 @section('content')
     <h1>Os meus Posts</h1>
-    <a href="{{ route('posts.create') }}" class="btn btn-dark">Criar Novo</a>
+    <a href="{{ route('posts.create') }}" class="btn btn-dark">Criar Novo Post</a>
+    <a href="{{ route('categorias') }}" class="btn btn-dark">Criar Nova Categoria</a>
     <a href="admin/blog" class="btn btn-dark">Voltar Blog</a>
     <div class="mt-3">
         @if (Session::has('ok'))

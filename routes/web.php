@@ -43,6 +43,7 @@ require __DIR__.'/auth.php';
 
 
 Auth::routes();
+Route::get('Blog', [App\Http\Controllers\BlogController::class, 'Blog'])->name('Blog');
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
@@ -64,9 +65,14 @@ Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHom
 
     //  Route::get('/professor/home', [HomeController::class, 'professorhome'])->name('professor.home');
   //});
-  Route::get('/admin/regras', [App\Http\Controllers\HomeController::class, 'adminRegras'])->name('admin.regras');
-  Route::get('/admin/blog', [App\Http\Controllers\HomeController::class, 'adminBlog'])->name('admin.blog');
+  Route::get('/admin/regras', [App\Http\Controllers\HomeController::class, 'adminRegras'])->name('admin.regras')->middleware('is_admin');
+
+  Route::get('/admin/blog', [App\Http\Controllers\HomeController::class, 'adminBlog'])->name('admin.blog')->middleware('is_admin');
+
   Route::resource('posts', 'App\Http\Controllers\PostController');
-  Route::get('posts', 'App\Http\Controllers\PostController@index')->name('posts');
+
+  Route::get('posts', 'App\Http\Controllers\PostController@index')->name('posts')->middleware('auth');
+
   Route::resource('categorias', 'App\Http\Controllers\CategoriaController');
-  Route::get('categorias', 'App\Http\Controllers\CategoriaController@index')->name('categorias');
+
+  Route::get('categorias', 'App\Http\Controllers\CategoriaController@index')->name('categorias')->middleware('auth');
