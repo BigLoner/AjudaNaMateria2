@@ -31,4 +31,7 @@ class AllController extends Controller
             'post' => $post,
         ]);
     }
+    public function Regras(){
+        return view('Regras');
+    }
 }

@@ -11,6 +11,7 @@
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
         "laravel/ui": "^4.2",
+        "laravelista/comments": "^4.5",
         "livewire/livewire": "^2.11",
         "pestphp/pest": "^1.16",
         "pestphp/pest-plugin-laravel": "^1.1"

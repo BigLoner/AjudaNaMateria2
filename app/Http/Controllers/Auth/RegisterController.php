@@ -54,6 +54,7 @@ class RegisterController extends Controller
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => ['required', 'string', 'min:8', 'confirmed'],
         ]);
+
     }
 
     /**
@@ -69,5 +70,15 @@ class RegisterController extends Controller
             'email' => $data['email'],
             'password' => Hash::make($data['password']),
         ]);
+    }
+    public function redirectTo()
+    {
+        if (auth()->user()->is_admin) {
+            return '/admin/home';
+        } else if (auth()->user()->is_authenticated) {
+            return '/user/home';
+        } else {
+            return route('user.home');
+        }
     }
 }

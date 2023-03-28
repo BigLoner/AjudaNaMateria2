@@ -46,6 +46,13 @@ class HomeController extends Controller
             'posts' => $posts,
         ]);
     }
+    public function adminDetail($id)
+    {
+        $post = Post::findOrFail($id);
+        return view('admin-detail',[
+            'post' => $post,
+        ]);
+    }
     public function userHome(){
         return view('userauth-home');
     }
@@ -58,5 +65,12 @@ class HomeController extends Controller
             'posts' => $posts,
         ]);
     }
+    public function userDetail($id){
+        $post = Post::findOrFail($id);
+        return view('userauth-detail',[
+            'post' => $post,
+        ]);
+    }
+
 
 }

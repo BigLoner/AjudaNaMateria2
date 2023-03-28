@@ -133,9 +133,9 @@
                                         <p>
                                             {{ $post->destaque }}
                                         </p>
-                                        <!--<div class="read-more">
-                                            <a href="">Ler Mais</a>
-                                        </div>-->
+                                        <div class="read-more">
+                                            <a href="{{route("detailBlog",$post->id)}}">Ler Mais</a>
+                                        </div>
                                     </div>
 
                                 </article>
