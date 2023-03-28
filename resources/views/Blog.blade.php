@@ -70,7 +70,7 @@
                 <ul>
                     <li><a class="nav-link scrollto " href="/">Inicio</a></li>
                     <li><a class="nav-link scrollto" href="Regras">Regras</a></li>
-                    <li><a href="Blog" class="nav-link scrollto active">Blog</a></li>
+                    <li><a href="Blog" class="nav-link scrollto active">Matéria</a></li>
 
                 </ul>
 
@@ -119,7 +119,7 @@
                                         <ul>
                                             <li class="d-flex align-items-center">
                                                 <i class="bi bi-person"></i>
-                                                <a href="#">{{ $post->user->name }}</a>
+                                                <a href="#">{{ $post->user?->name }}</a>
                                             </li>
                                             <li class="d-flex align-items-center">
                                                 <i class="bi bi-clock"></i>

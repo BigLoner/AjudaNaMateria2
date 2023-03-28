@@ -23,7 +23,7 @@
         <ul>
           <li><a class="nav-link scrollto active" href="/">Inicio</a></li>
           <li><a class="nav-link scrollto" href="Regras">Regras</a></li>
-          <li><a href="Blog">Blog</a></li>
+          <li><a href="Blog">Matéria</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->

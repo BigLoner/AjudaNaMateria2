@@ -15,9 +15,9 @@
                     @endif
 
                    {{Auth::user()->name}}
-                
 
-                    <button type="button" class="btn btn-outline-primary"><a href="/">Clique aqui para voltar à pagina inicial!</a></button>
+
+                    <button type="button" class="btn btn-outline-primary"><a href="user\home">Clique aqui para voltar à pagina inicial!</a></button>
                 </div>
             </div>
         </div>

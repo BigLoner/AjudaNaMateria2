@@ -12,7 +12,7 @@ class HomeController extends Controller
      *
      * @return void
      */
-  
+
     public function __construct()
     {
         $this->middleware('auth');
@@ -43,6 +43,18 @@ class HomeController extends Controller
     {
         $posts = Post::all();
         return view('admin-blog',[
+            'posts' => $posts,
+        ]);
+    }
+    public function userHome(){
+        return view('userauth-home');
+    }
+    public function userRegras(){
+        return view('userauth-regras');
+    }
+    public function userBlog(){
+        $posts = Post::all();
+        return view('userauth-blog',[
             'posts' => $posts,
         ]);
     }

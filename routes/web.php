@@ -69,6 +69,10 @@ Route::get('/admin/home', [App\Http\Controllers\HomeController::class, 'adminHom
 
   Route::get('/admin/blog', [App\Http\Controllers\HomeController::class, 'adminBlog'])->name('admin.blog')->middleware('is_admin');
 
+  Route::get('/user/home', [App\Http\Controllers\HomeController::class, 'userHome'])->name('user.home')->middleware('auth');
+  Route::get('/user/regras', [App\Http\Controllers\HomeController::class, 'userRegras'])->name('user.regras')->middleware('auth');
+  Route::get('/user/blog', [App\Http\Controllers\HomeController::class, 'userBlog'])->name('user.blog')->middleware('auth');
+
   Route::resource('posts', 'App\Http\Controllers\PostController');
 
   Route::get('posts', 'App\Http\Controllers\PostController@index')->name('posts')->middleware('auth');

@@ -78,13 +78,12 @@
                                 @enderror
                             </div>
                             <button type="submit" class="btn btn-primary">Guardar Post</button>
+                            <a href="{{ route('posts') }}" class="btn btn-dark">Voltar para posts</a>
                         </form>
 
                         <div class="blog-pagination">
                             <ul class="justify-content-center">
-                                <li class="active"><a href="/#">Voltar para o inicio </a></li>
-                                <li><a href="{{route('categorias')}}">Voltar para o Categoria</a></li>
-                                <li><a href="{{route('posts')}}">Voltar para o Posts</a></li>
+
                             </ul>
                         </div>
 
