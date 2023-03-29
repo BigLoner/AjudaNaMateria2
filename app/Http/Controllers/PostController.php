@@ -98,7 +98,7 @@ class PostController extends Controller
         }
         Post::findOrFail($id)->update($dados);
         session()->flash('ok', 'Post editado com sucesso');
-        return redirect()->route('posts.index');
+        return redirect()->route('posts');
     }
     /**
      * Remove the specified resource from storage.

@@ -14,7 +14,7 @@
     <div class="container">
         <h1>Edit Posts</h1>
 
-        <form action="{{route('posts.update', $post, $categorias)}}" method="post">
+        <form action="{{route('posts.update', $post, $categorias)}}" method="post" enctype="multipart/form-data">
             @method('put')
             @csrf
             <div class="mb-3">

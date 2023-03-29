@@ -48,7 +48,7 @@
             </div>
             <ul class="navbar-nav ms-auto">
                 <div class="cta d-none d-md-block">
-                    <a href="dashboard" class="scrollto">Login/Register</a>
+                    <a href="{{ route('dashboard') }}" class="scrollto">Login/Register</a>
                 </div>
                 <!-- Authentication Links -->
 
