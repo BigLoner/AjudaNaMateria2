@@ -19,11 +19,11 @@
                 <div class="row">
 
                     <div class="col-lg-8 entries">
-                        <h1>Novo Post</h1>
+                        <h1>Nova Matéria</h1>
                         <form method="POST" action="{{ route('posts.store') }}" enctype="multipart/form-data">
                             @csrf
                             <div class="mb-3">
-                                <label for="titulo" class="form-label">Título do Post</label>
+                                <label for="titulo" class="form-label">Título da Matéria</label>
                                 <input type="text" class="form-control @error('titulo') is-invalid @enderror" id="titulo"
                                     name="titulo" value="{{ old('titulo') }}">
                                 @error('titulo')
@@ -33,7 +33,7 @@
                                 @enderror
                             </div>
                             <div class="mb-3">
-                                <label for="destaque" class="form-label">Destaque</label>
+                                <label for="destaque" class="form-label">Assunto</label>
                                 <textarea class="form-control @error('destaque') is-invalid @enderror" name="destaque" id="destaque"
                                     rows="3">{{ old('destaque') }}</textarea>
                                 @error('destaque')
@@ -77,8 +77,8 @@
                                     </div>
                                 @enderror
                             </div>
-                            <button type="submit" class="btn btn-primary">Guardar Post</button>
-                            <a href="{{ route('posts') }}" class="btn btn-dark">Voltar para posts</a>
+                            <button type="submit" class="btn btn-primary">Guardar Matéria</button>
+                            <a href="{{ route('posts') }}" class="btn btn-dark">Voltar para Matéria</a>
                         </form>
 
                         <div class="blog-pagination">

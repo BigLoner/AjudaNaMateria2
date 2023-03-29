@@ -85,7 +85,7 @@
         <section id="breadcrumbs" class="breadcrumbs">
             <div class="container">
 
-                <h2>Blog</h2>
+                <h2>Matéria</h2>
 
             </div>
 
@@ -149,13 +149,7 @@
 
                             {{-- {{$posts->links()}} --}}
 
-                            <div class="blog-pagination">
-                                <ul class="justify-content-center">
-                                    <li class="active"><a href="#">1</a></li>
-                                    <li><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                </ul>
-                            </div>
+
 
                         </div><!-- End blog entries list -->
 
@@ -163,23 +157,18 @@
 
                             <div class="sidebar">
 
-                                <h3 class="sidebar-title">Search</h3>
-                                <div class="sidebar-item search-form">
-                                    <form action="">
-                                        <input type="text">
-                                        <button type="submit"><i class="bi bi-search"></i></button>
-                                    </form>
-                                </div><!-- End sidebar search formn-->
+                                <!-- End sidebar search formn-->
 
-                                <h3 class="sidebar-title">Categories</h3>
+                                <h3 class="sidebar-title">Categorias</h3>
                                 <div class="sidebar-item categories">
                                     <ul>
-                                        <li>teste (2)</li>
-                                        <li>teste (1)</li>
+                                        @foreach ($categorias as $categoria )
+                                           <li>{{ $categoria->categoria }} ({{ $categoria->posts->count() }})</li>
+                                        @endforeach
                                     </ul>
                                 </div><!-- End sidebar categories-->
 
-                                <h3 class="sidebar-title">posts Recentes</h3>
+                                <h3 class="sidebar-title">Matérias Recentes</h3>
                                 <div class="sidebar-item recent-posts">
                                     @foreach ($posts as $post)
                                         <div class="post-item clearfix">
@@ -187,7 +176,7 @@
                                                 <img src="{{ asset('appimgs/posts/' . $post->imagem) }}"
                                                     alt="{{ $post->titulo }}">
                                             @endif
-                                            <h4><a href="#">{{ $post->titulo }}</a></h4>
+                                            <h4>{{ $post->titulo }}</a></h4>
                                             <time
                                                 datetime="2020-01-01">{{ $post->updated_at->diffForHumans() }}</time>
                                         </div>

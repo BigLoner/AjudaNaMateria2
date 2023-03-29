@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Models\Categoria;
 
 class HomeController extends Controller
 {
@@ -42,8 +43,10 @@ class HomeController extends Controller
     public function adminBlog()
     {
         $posts = Post::all();
+        $categorias = Categoria::orderBy('categoria')->get();
         return view('admin-blog',[
             'posts' => $posts,
+            'categorias' => $categorias,
         ]);
     }
     public function adminDetail($id)
@@ -61,8 +64,10 @@ class HomeController extends Controller
     }
     public function userBlog(){
         $posts = Post::all();
+        $categorias = Categoria::orderBy('categoria')->get();
         return view('userauth-blog',[
             'posts' => $posts,
+            'categorias' => $categorias,
         ]);
     }
     public function userDetail($id){

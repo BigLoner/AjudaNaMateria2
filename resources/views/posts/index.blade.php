@@ -1,10 +1,10 @@
 @extends('layouts.base')
 
 @section('content')
-    <h1>Os meus Posts</h1>
-    <a href="{{ route('posts.create') }}" class="btn btn-dark">Criar Novo Post</a>
+    <h1>As minhas matérias</h1>
+    <a href="{{ route('posts.create') }}" class="btn btn-dark">Criar Nova Matéria</a>
     <a href="{{ route('categorias') }}" class="btn btn-dark">Criar Nova Categoria</a>
-    <a href="admin/blog" class="btn btn-dark">Voltar Blog</a>
+    <a href="admin/blog" class="btn btn-dark">Voltar à Matéria</a>
     <div class="mt-3">
         @if (Session::has('ok'))
         <div class="alert alert-success" role="alert">
@@ -45,7 +45,7 @@
                 </tr>
             @empty
                 <tr>
-                    <td colspan="3">Ainda sem Posts</td>
+                    <td colspan="3">Ainda sem Matérias</td>
                 </tr>
             @endforelse
         </tbody>

@@ -116,7 +116,8 @@
         <section id="breadcrumbs" class="breadcrumbs">
             <div class="container">
 
-                <h2>Blog</h2>
+                <h2>Matéria</h2>
+                <i><a href="{{ route('user.blog') }}"><button type="submit" class="btn btn-primary" >Voltar à Matéria </button></a>
 
             </div>
 

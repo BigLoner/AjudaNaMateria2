@@ -28,7 +28,7 @@
                 @enderror
             </div>
             <div class="mb-3">
-                <label for="destaque" class="form-label">Destaque</label>
+                <label for="destaque" class="form-label">Assunto</label>
                 <textarea class="form-control @error('destaque') is-invalid @enderror" name="destaque" id="destaque"
                     rows="3">{{ $post->destaque }}</textarea>
                 @error('destaque')
