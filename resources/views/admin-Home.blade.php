@@ -395,38 +395,28 @@
 
                 <div class="row">
 
-                    <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="col-lg-5.1" data-aos="fade-up" data-aos-delay="100">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="{{ asset('pap/assets/img/team/Team-1.png') }}"
-                                    class="img-fluid" alt=""></div>
+                            <div class="pic"><img src="{{asset('pap/assets/img/team/Team-1.png')}}" class="img-fluid"
+                                    alt=""></div>
                             <div class="member-info">
                                 <h4>Rodrigo Teixeira</h4>
                                 <span>Criador do Site</span>
                                 <p>Encarregado do código feito no site</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="col-lg-5.1 mt-5 mt-lg-0" data-aos="fade-up" data-aos-delay="200">
                         <div class="member d-flex align-items-start">
-                            <div class="pic"><img src="pap/assets/img/team/Team-2.png" class="img-fluid"
+                            <div class="pic"><img src="{{asset('pap/assets/img/team/Team-2.png')}}" class="img-fluid"
                                     alt=""></div>
                             <div class="member-info">
                                 <h4>Gabriel Coelho</h4>
                                 <span>Criador do site</span>
                                 <p>Encarregado da base de dados e das imagens colocadas no site</p>
-                                <div class="social">
-                                    <a href=""><i class="ri-twitter-fill"></i></a>
-                                    <a href=""><i class="ri-facebook-fill"></i></a>
-                                    <a href=""><i class="ri-instagram-fill"></i></a>
-                                    <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -444,7 +434,7 @@
             <div class="container" data-aos="fade-up">
 
                 <div class="section-title">
-                    <h2>Contact Us</h2>
+                    <h2>Contacte-nos</h2>
                 </div>
 
                 <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
@@ -488,11 +478,11 @@
                                 <textarea class="form-control" name="message" rows="5" placeholder="Mensagem" required></textarea>
                             </div>
                             <div class="my-3">
-                                <div class="loading">Loading</div>
+                                <div class="loading">Carregando</div>
                                 <div class="error-message"></div>
-                                <div class="sent-message">Your message has been sent. Thank you!</div>
+                                <div class="sent-message">A sua mensagem foi enviada, obrigado!</div>
                             </div>
-                            <div class="text-center"><button type="submit">Send Message</button></div>
+                            <div class="text-center"><button type="submit">Envie a mensagem</button></div>
                         </form>
 
                     </div>
@@ -511,18 +501,8 @@
             <div class="container">
                 <div class="row">
 
-                    <div class="col-lg-3 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Dashboard</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h4>Contact Us</h4>
+                        <h4>Contacte-nos</h4>
                         <p>
                             Rua do Parque, 2120-092 Salvaterra de Magos<br>
                             Portugal <br><br>
@@ -532,13 +512,7 @@
                     </div>
 
 
-                    <div class="social-links mt-3">
-                        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                        <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                    </div>
+
 
 
                 </div>
@@ -555,6 +529,7 @@
                 <!-- Licensing information: https://bootstrapmade.com/license/ -->
                 <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ -->
                 Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                <p> Modificado por: Rodrigo Teixeira e Gabriel Coelho.</p>
             </div>
         </div>
     </footer><!-- End Footer -->
