@@ -69,7 +69,7 @@
                 <ul>
                     <li><a class="nav-link scrollto " href="/">Inicio</a></li>
                     <li><a class="nav-link scrollto" href="{{ route('Regras') }}">Regras</a></li>
-                    <li><a href="Blog" class="nav-link scrollto active">Matéria</a></li>
+                    <li><a href="{{ route('Blog') }}" class="nav-link scrollto active">Matéria</a></li>
 
                 </ul>
 
