@@ -31,7 +31,11 @@ class AllController extends Controller
             'post' => $post,
         ]);
     }
-    public function Regras(){
-        return view('Regras');
+    public function Auth(){
+        if(auth()->user()->is_admin==1){
+            return redirect()->route('admin.blog');
+           }else{
+               return redirect()->route('user.blog');
+           }
     }
 }

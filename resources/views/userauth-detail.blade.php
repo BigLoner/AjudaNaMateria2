@@ -172,11 +172,51 @@
                       </article>
 
 
+                      <div class="blog-comments">
+
+                        <h4 class="comments-count">{{$post->comentarios->count()}} Comentarios</h4>
+                        @foreach ( $post->comentarios as $comentario )
+                        <div id="comment-1" class="comment">
+                            <div class="d-flex">
+                                {{--<div class="comment-img"><img src="{{asset('flattern/assets/img/blog/comments-1.jpg')}}" alt=""></div>--}}
+                                <div>
+                                    <h5>{{$comentario->user->name}}</h5>
+                                    <time datetime="2020-01-01">{{$comentario->updated_at->diffForHumans()}}</time>
+                                    <p>
+                                       {{$comentario->comentario}}
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
+
+
+
+                       <!-- End comment #4 -->
+                        @auth
+                            <div class="reply-form">
+                                <h4>Comente</h4>
+                                <p>A sua identificação será exibida * </p>
+                                <form action="{{route('comentarios.store')}}" method="post">
+                                    @csrf
+                                    <input type="hidden" name='post_id' value="{{$post->id}}">
+                                    <div class="row">
+                                        <div class="col form-group">
+                                            <textarea name="comentario" class="form-control" placeholder="Deixe o seu comentario*"></textarea>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Enviar comentario</button>
+
+                                </form>
+
+                            </div>
+                        @endauth
 
 
                     </div>
                 </div>
             </div>
+
 
         </section>
         <footer id="footer">

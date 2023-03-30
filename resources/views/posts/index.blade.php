@@ -4,11 +4,16 @@
     <h1>As minhas matérias</h1>
     <a href="{{ route('posts.create') }}" class="btn btn-dark">Criar Nova Matéria</a>
     <a href="{{ route('categorias') }}" class="btn btn-dark">Criar Nova Categoria</a>
-    <a href="admin/blog" class="btn btn-dark">Voltar à Matéria</a>
+    <a href="{{ route('auth') }}" class="btn btn-dark">Voltar à Matéria</a>
     <div class="mt-3">
         @if (Session::has('ok'))
         <div class="alert alert-success" role="alert">
             {{Session::get('ok')}}
+        </div>
+        @endif
+        @if (Session::has('danger'))
+        <div class="alert alert-danger" role="alert">
+            {{Session::get('danger')}}
         </div>
         @endif
     </div>

@@ -2,34 +2,21 @@
 
 namespace App\Http\Controllers;
 
-
-use App\Models\Categoria;
+use App\Http\Requests\ComentariosFormRequest;
+use App\Models\Comentario;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
-
-class CategoriaController extends Controller
+class ComentarioController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
-     *
      */
     public function index()
     {
-        if(auth()->user()->is_admin==1){
-        $categorias = Categoria::all();
-        return view('categorias.index', [
-            'categorias' => $categorias,
-        ]);
-       }else{
-        session()-> flash('danger','Não tens permissões para criar categorias');
-           return redirect()->route('posts');
-
-
-       }
-
-
+        //
     }
 
     /**
@@ -39,7 +26,7 @@ class CategoriaController extends Controller
      */
     public function create()
     {
-        return view('categorias.create');
+        //
     }
 
     /**
@@ -48,12 +35,17 @@ class CategoriaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(ComentariosFormRequest $request)
     {
-        //dd($request->all());
-        Categoria::create($request->all());
-        session()->flash('ok', 'Categoria inserida com sucesso');
-        return redirect()->route('categorias');
+        $dados = $request->all();
+        $dados['user_id'] = Auth::user()->id;
+        Comentario::create($dados);
+        session()-> flash('ok','Comentário inserido com sucesso');
+        if(auth()->user()->is_admin==1){
+            return redirect()->route('admin.blog');
+           }else{
+               return redirect()->route('user.blog');
+           }
     }
 
     /**
@@ -75,10 +67,7 @@ class CategoriaController extends Controller
      */
     public function edit($id)
     {
-        $categoria = Categoria::findOrFail($id);
-        return view('categorias.edit', [
-            'categoria' => $categoria,
-        ]);
+        //
     }
 
     /**
@@ -90,9 +79,7 @@ class CategoriaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $categoria = Categoria::findOrFail($id);
-        $categoria->update($request->all());
-        return redirect()->route('categorias');
+        //
     }
 
     /**
@@ -103,15 +90,6 @@ class CategoriaController extends Controller
      */
     public function destroy($id)
     {
-        $categoria = Categoria::findOrFail($id);
-        if ($categoria->posts->isEmpty()) {
-            $categoria->delete();
-
-            return redirect()->route('categorias');
-        }
-        session()-> flash('danger','Esta categoria tem matéria ');
-        return redirect()->route('categorias');
-
-
+        //
     }
 }

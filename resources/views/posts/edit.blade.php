@@ -12,7 +12,7 @@
     <title>Tecno Car</title>
 </head>
     <div class="container">
-        <h1>Edit Posts</h1>
+        <h1>Edit Matéria</h1>
 
         <form action="{{route('posts.update', $post, $categorias)}}" method="post" enctype="multipart/form-data">
             @method('put')
@@ -42,6 +42,16 @@
                 <input type="file" class="form-control @error('imagem') is-invalid @enderror" name="imagem" id="imagem"
                     rows="3" value="{{ old('imagem') }}">
                 @error('imagem')
+                    <div class="invalid-feedback">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+            <div class="mb-3">
+                <label for="desenvolvimento" class="form-label">Desenvolvimento</label>
+                <textarea class="form-control @error('desenvolvimento') is-invalid @enderror" name="desenvolvimento"
+                    id="desenvolvimento" rows="10">{{ $post->desenvolvimento }}</textarea>
+                @error('desenvolvimento')
                     <div class="invalid-feedback">
                         {{ $message }}
                     </div>

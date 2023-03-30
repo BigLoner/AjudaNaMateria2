@@ -74,6 +74,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
   Route::get('/user/regras', [App\Http\Controllers\HomeController::class, 'userRegras'])->name('user.regras')->middleware('auth');
   Route::get('/user/blog', [App\Http\Controllers\HomeController::class, 'userBlog'])->name('user.blog')->middleware('auth');
   Route::get('/user/detail/{id}', [App\Http\Controllers\HomeController::class, 'userDetail'])->name('user.detail')->middleware('auth');
+
   Route::get('/blog/detail/{id}', [App\Http\Controllers\DetailBlogController::class, 'detailBlog'])->name('detailBlog');
 
 
@@ -84,3 +85,8 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
   Route::resource('categorias', 'App\Http\Controllers\CategoriaController');
 
   Route::get('categorias', 'App\Http\Controllers\CategoriaController@index')->name('categorias')->middleware('auth');
+
+  Route::resource('comentarios','App\Http\Controllers\ComentarioController');
+
+  Route::get('auth', [App\Http\Controllers\AllController::class, 'auth'])->name('auth')->middleware('auth');
+

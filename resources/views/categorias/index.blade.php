@@ -11,13 +11,18 @@
             {{Session::get('ok')}}
         </div>
         @endif
+        @if (Session::has('danger'))
+        <div class="alert alert-danger" role="alert">
+            {{Session::get('danger')}}
+        </div>
+        @endif
     </div>
     <table class="table table-hover">
         <thead>
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Categoria</th>
-                <th scope="col">Posts</th>
+                <th scope="col">Matéria</th>
                 <th scope="col">Ações</th>
             </tr>
         </thead>

@@ -19,6 +19,7 @@ class PostController extends Controller
         return view('posts.index ', [
             'posts' => $posts,
         ]);
+
     }
     /**
      * Show the form for creating a new resource.
@@ -51,7 +52,7 @@ class PostController extends Controller
             $dados['imagem'] = $imgName;
         }
         Post::create($dados);
-        session()->flash('ok', 'Post inserido com sucesso');
+        session()->flash('ok', 'Matéria inserida com sucesso');
         return redirect()->route('posts');
     }
     /**
@@ -97,7 +98,7 @@ class PostController extends Controller
             $dados['imagem'] = $imgName;
         }
         Post::findOrFail($id)->update($dados);
-        session()->flash('ok', 'Post editado com sucesso');
+        session()->flash('ok', 'Matéria editada com sucesso');
         return redirect()->route('posts');
     }
     /**
