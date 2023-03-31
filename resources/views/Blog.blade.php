@@ -142,7 +142,7 @@
                             @empty
                                 <article class="entry">
                                     <h2 class="entry-title">
-                                        <p>Sem posts por agora!</p>
+                                        <p>Sem matérias por agora!</p>
                                     </h2>
                                 </article>
                             @endforelse

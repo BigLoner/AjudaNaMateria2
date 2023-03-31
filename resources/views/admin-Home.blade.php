@@ -238,7 +238,7 @@
                         data-aos="fade-left">
 
                         <div class="content">
-                            <h3>F/Q <strong>Perguntas e resposta sobre o site</strong></h3>
+                            <h3> <strong>Perguntas e resposta sobre o site</strong></h3>
                             <p>
                                 Aqui tem algumas perguntas e respostas comuns.
                             </p>
